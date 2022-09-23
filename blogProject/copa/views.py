@@ -29,7 +29,7 @@ def players(request):
 
 
 def show_post(request, post_id):
-    posts = get_object_or_404(Post, id=post_id)
+    posts = Post.objects.get(Post, id=post_id)
     return render(request, 'copa/show_post.html', {
         'posts': posts
     })
