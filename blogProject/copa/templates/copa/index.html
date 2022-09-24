@@ -73,7 +73,6 @@
         <img src="assets/world-cup.png" width="7%" style="padding-right: 10px">
         <strong>Qatar World Cup</strong>
       </a>
-      {% include 'copa/static/partials/_nav.html' %}
   </div>
 </header>
 <main>
@@ -95,20 +94,21 @@
 
 <div class="album py-5 bg-light">
     <div class="container">
+      {% include 'copa/static/partials/_nav.html' %}
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           {%for post in posts%}
           <div class="col">
             <div class="card shadow-sm">
               <img src="{{post.image}}">
               <div class="card-body">
-                <strong> {{post.title}} </strong>
+                 <h5> <strong>{{post.title}}</strong> </h5>
                 <p class="card-text">{{post.description|truncatewords:20}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="{{post.id}}">  View </a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                   </div>
-                  <small class="text-muted">{{post.date}}</small>
+                  <small class="text-muted">{{post.category}} - {{post.date}}</small>
                 </div>
               </div>
             </div>
