@@ -6,108 +6,185 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <style>
-#menu {
-	background: #000000;
-	color: #FFF;
-	height: 45px;
-	padding-left: 18px;
-	border-radius: 0px;
+
+br { display: block; line-height: 1.6em; }
+
+
+
+input, textarea {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
 }
-#menu ul, #menu li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+h1 {
+  font-family: 'Petrona', 'Trebuchet MS', 'Times New Roman', serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #2d2d2d;
 }
-#menu ul {
-	width: 100%;
+
+h2 {
+  font-family: 'Petrona', 'Trebuchet MS', 'Times New Roman', serif;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #414141;
 }
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 10px;
 }
-#menu a {
-	display: block;
-	line-height: 45px;
-	padding: 0 14px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 16px;
+
+.text-description {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #515151;
+  margin-bottom: 16px;
 }
-#menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
+
+#top {
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin-bottom: 25px;
+  background-color: white;
+  background-image: -moz-linear-gradient(top, #2f2f2f, #515151);
+  background-image: -ms-linear-gradient(top, #2f2f2f, #515151);
+  background-image: -o-linear-gradient(top, #2f2f2f, #515151);
+  background-image: linear-gradient(top, #2f2f2f, #515151);
 }
-#menu li a:hover {
-	color: #0099CC;
-	background: #F2F2F2;
+
+.container {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 7px;
 }
-#menu input {
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 45px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
+
+/** main content **/
+#content {
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 3px #bebebe;
+  -moz-box-shadow: 1px 1px 3px #bebebe;
+  box-shadow: 1px 1px 3px #bebebe;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
-#menu label {
-	display: none;
-	line-height: 45px;
-	text-align: center;
-	position: absolute;
-	left: 35px
+
+
+.byline {
+ font-size: 1.4em;
+ line-height: 18px;
+ font-style: italic;
+ color: #676767;
 }
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261";
-	margin-left: 20px;
+
+
+.byline a {
+ text-decoration: none;
 }
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 170px;
-	background: #444444;
-	position: absolute;
-	z-index: 99;
-	display: none;
+
+#post-container {
+    margin-right: -250px;
+    float:left;
+    width:100%;
 }
-#menu ul.sub-menus li {
-	display: block;
-	width: 100%;
+#post {
+  margin-right: 260px;
 }
-#menu ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
+
+
+
+
+
+
+/** media queries **/
+@media screen and (max-width: 710px) {
+  #logo { float: none; width: 100%; text-align: center; }
+  #navigation { display: none; }
+
+  #sidebar { display: none; }
+  #post-container { margin-right: 0; float: none; }
+  #post { margin-right: 0; }
+
+  #mobilenav { display: block; background: #393939; }
+
+  p { line-height: 1.7em; }
 }
-#menu li:hover ul.sub-menus {
-	display: block
+
+@media screen and (max-width: 420px) {
+  #logo { font-size: 2.7em; }
+
+  h1 { font-size: 3.0em; }
+  .byline { font-size: 1.1em; }
 }
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #444444;
-}
-@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-}
-    </style>
+
+</style>
 </head>
+<header>
+<nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" style="margin-right: 10px; margin-left:20px" width="38px">
+    <a class="navbar-brand" href="#">Qatar World Cup</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/makepost/">Make a post</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
 <body>
-
-<form action="." method="POST">
-    {%csrf_token%}
-    {{form.as_p}}
-    <input type="submit" value="Cadastrar">
-</form>
-
+<div class="container">
+    <article id="content" class="clearfix">
+      <h1>{{post.title}}</h1>
+      <p class="byline">Written by <a href="javascript:void(0)">{{post.author}}</a> {{post.date}}</p>
+      <div id="post-container">
+        <section id="post">
+          <figure id="featuredimg">
+            <img src="{{post.image}}">
+          </figure>
+          <form action="." method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+      </div><!-- @end #post-container -->
+      </aside><!-- @end #sidebar -->
+    </article><!-- @end #content -->
+  </div><!-- @end #container -->
 </body>
 </html>

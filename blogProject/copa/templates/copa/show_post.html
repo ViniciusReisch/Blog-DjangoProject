@@ -6,58 +6,196 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>{{post.title}}</title>
-  <style>
+<style>
 
-.post-lede {
-  font-family: Avenir Next, SegoeUI, Franklin Gothic, arial, sans-serif;
-  font-size: 2em;
-  font-weight: 500;
-  line-height: 1.3;
-}
+br { display: block; line-height: 1.6em; }
 
-.post-body {
+
+
+input, textarea {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 50em;
-  width: 94%;
-  font-size: 1.125em;
-  margin-top: 20px;
-  padding: 5%;
-  background-color: #fff;
+  outline: none;
 }
 
-  </style>
-</head>
-<nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" style="margin-right: 10px; margin-left:20px" width="38px">
-    <a class="navbar-brand" href="#">Qatar World Cup</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/makepost/">Make a post</a>
-        </li>
-      </ul>
-    </div>
-</nav>
-</header>
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+h1 {
+  font-family: 'Petrona', 'Trebuchet MS', 'Times New Roman', serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #2d2d2d;
+}
+
+h2 {
+  font-family: 'Petrona', 'Trebuchet MS', 'Times New Roman', serif;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #414141;
+}
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.text-description {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #515151;
+  margin-bottom: 16px;
+}
+
+#top {
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin-bottom: 25px;
+  background-color: white;
+  background-image: -moz-linear-gradient(top, #2f2f2f, #515151);
+  background-image: -ms-linear-gradient(top, #2f2f2f, #515151);
+  background-image: -o-linear-gradient(top, #2f2f2f, #515151);
+  background-image: linear-gradient(top, #2f2f2f, #515151);
+}
+
+.container {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 7px;
+}
+
+/** main content **/
+#content {
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 3px #bebebe;
+  -moz-box-shadow: 1px 1px 3px #bebebe;
+  box-shadow: 1px 1px 3px #bebebe;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+.byline {
+ font-size: 1.4em;
+ line-height: 18px;
+ font-style: italic;
+ color: #676767;
+}
+
+
+.byline a {
+ text-decoration: none;
+}
+
+#post-container {
+    margin-right: -250px;
+    float:left;
+    width:100%;
+}
+#post {
+  margin-right: 260px;
+}
+
+
+
+
+
+
+/** media queries **/
+@media screen and (max-width: 710px) {
+  #logo { float: none; width: 100%; text-align: center; }
+  #navigation { display: none; }
+
+  #sidebar { display: none; }
+  #post-container { margin-right: 0; float: none; }
+  #post { margin-right: 0; }
+
+  #mobilenav { display: block; background: #393939; }
+
+  p { line-height: 1.7em; }
+}
+
+@media screen and (max-width: 420px) {
+  #logo { font-size: 2.7em; }
+
+  h1 { font-size: 3.0em; }
+  .byline { font-size: 1.1em; }
+}
+
+</style>
 <body>
-<div>
-  <div class="post-body">
-    <h1 class="post-lede">{{post.title}}</h1>
-    <p>{{post.description}}</p>
-    <img src="{{post.image}}" width="100%" style="margin-top: 30px; margin-bottom:30px">
-    <p>{{post.description}}</p>
-  </div>
-</div>
+  <header id="top">
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" style="margin-right: 10px; margin-left:20px" width="38px">
+        <a class="navbar-brand" href="#">Qatar World Cup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/makepost/">Make a post</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header><!-- @end #top -->
+
+  <div class="container">
+    <article id="content" class="clearfix">
+      <h1>{{post.title}}</h1>
+      <p class="byline">Written by <a href="javascript:void(0)">{{post.author}}</a> {{post.date}}</p>
+      <div id="post-container">
+        <section id="post">
+          <figure id="featuredimg">
+            <img src="{{post.image}}">
+          </figure>
+          <p class="text-description"> {{post.description}} </p>
+        </section>
+      </div><!-- @end #post-container -->
+        <h3>Recent Posts</h3>
+            {%for post in posts%}
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            {%endfor%}
+      </aside><!-- @end #sidebar -->
+    </article><!-- @end #content -->
+  </div><!-- @end #container -->
+
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
@@ -75,6 +213,6 @@
       <a class="link-social" href="https://twitter.com/Flyinglegit"> <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" width="17px"> </a></p>
   </div>
 </footer>
-
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
