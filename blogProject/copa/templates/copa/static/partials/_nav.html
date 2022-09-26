@@ -1,19 +1,53 @@
 <style>
-    select {
-    margin-left: 20px
-    }
+.dropbtn {
+  background-color: #3E3C3C;
+  color: white;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3E3C3C;
+  min-width: 50px;
+  border-radius: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #C1C1C1; border-radius: 6px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Category's</label>
-  </div>
-
-  <select class="custom-select" id="inputGroupSelect01">
-   <a href="/games/"> <option value="1">  Games </option> </a>
-   <a href="/news/"> <option value="2">  News  </option> </a>
-   <a href="/players/"> <option value="3">  Players </option> </a>
-  </select>
+    <div class="dropdown">
+      <button class="dropbtn">Category's</button>
+      <div class="dropdown-content">
+        <a href="/players/"> Players </a>
+        <a href="/news/"> News </a>
+        <a href="/games"> Games </a>
+      </div>
+    </div>
     <p class="lead text-muted" style="margin-left: 20px; margin-right:20px;"> or </p>
 <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
