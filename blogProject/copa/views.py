@@ -29,10 +29,13 @@ def players(request):
 
 
 def show_post(request, post_id):
-    posts = get_object_or_404(Post, id=post_id)
+    post = get_object_or_404(Post, id=post_id)
+    posts = Post.objects.all()
     return render(request, 'copa/show_post.html', {
-        'post': posts
-    })
+        'post': post,
+        'posts': posts
+    }
+)
 
 
 def make_post(request):
@@ -48,3 +51,8 @@ def make_post(request):
         else:
             return render(request, "copa/make_post.html",
                           {'form': form})
+
+def search_value(request):
+
+    return render(request, 'copa/index.html',
+                  {'posts': posts})

@@ -185,11 +185,12 @@ h3 {
       </div><!-- @end #post-container -->
         <h3>Recent Posts</h3>
             {%for post in posts%}
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card" style="width: 15rem; margin-bottom: 20px; margin-left: 600px;">
+              <img class="card-img-top" src="{{post.image}}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="">{{post.title}}</h5>
+                <a href="{{post.id}}" class="btn btn-primary">Go</a>
+              </div>
             </div>
             {%endfor%}
       </aside><!-- @end #sidebar -->
