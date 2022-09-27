@@ -25,15 +25,12 @@ See more about Django at: <a href="https://www.djangoproject.com/"> <img src="ht
   
 ### How to download and run the project:
 
-  + First, download the project from Github: ``git clone https://github.com/Flyinng/CRUD-Supermarket``.
+  + First, download the project from Github: ``git clone https://github.com/Flyinng/Blog-DJangoProject``.
 
-  + Then install the Scrapy library in your IDE.
+  + Then install the Django library in your IDE.
 
-  + In your IDE's terminal, use the command ``cd main`` and then the command ``cd spiders`` to access Crawler.
-
-  + After that, in the terminal type the command ``scrapy crawl bs -O data.json``.
-  
-  + This will gather all the product data in the respective stores, to get the lowest value run the ``refactor.py`` file.
+  + In your IDE's terminal, use the command ``cd BlogProject`` and then the command ``python manage.py runserver`` to access the WebSite.
+  + 
 <br>
 📜Project developed in the <a href="https://www.entra21.com.br/">Entra21</a> Python Class
 
