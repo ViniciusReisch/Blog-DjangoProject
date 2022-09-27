@@ -6,8 +6,6 @@
     <link rel="icon"
       type="image/png"
       href="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <style>
 
 br { display: block; line-height: 1.6em; }
@@ -120,10 +118,6 @@ h3 {
 }
 
 
-
-
-
-
 /** media queries **/
 @media screen and (max-width: 710px) {
   #logo { float: none; width: 100%; text-align: center; }
@@ -146,6 +140,8 @@ h3 {
 }
 
 </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <header>
 <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -178,8 +174,10 @@ h3 {
             <img src="{{post.image}}">
           </figure>
           <form action="." method="POST">
+              <div class="test">
             {%csrf_token%}
             {{form.as_p}}
+              </div>
             <input type="submit" value="Submit">
           </form>
         </section>
