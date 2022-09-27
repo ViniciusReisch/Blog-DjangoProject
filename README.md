@@ -8,13 +8,20 @@ Django is a rapid web development framework written in Python that uses the mode
 <br>
 See more about Django at: <a href="https://www.djangoproject.com/"> <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png" width='50px'> </a>
 
-### Program features:
+## Program features:
 
   + Create posts with categories, titles, descriptions and images.
   <img src="img/make_post.png" width="40%">
 
   + You can see your posts on specific pages in a screen with the articles
   <img src="img/view_post.png" width="40%"> 
+  
+  + The posts are all gathered on the main page of the site.
+  <img src="img/all_posts.png" width="40%"> 
+  
+  + Posts can be filtered by the search bar or by categories (news, players and games)
+  <img src="img/filter.png" width="40%"> 
+  
   
 ### How to download and run the project:
 
