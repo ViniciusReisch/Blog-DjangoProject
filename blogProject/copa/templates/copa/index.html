@@ -10,6 +10,9 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+
+
+
       #menu {
        text-decoration: none;
       }
@@ -73,8 +76,8 @@
 
 <header>
 <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" style="margin-right: 10px; margin-left:20px" width="38px">
-    <a class="navbar-brand" href="#">Qatar World Cup</a>
+    <a href="/#"> <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" style="margin-right: 10px; margin-left:20px" width="38px"></a>
+    <a class="navbar-brand" href="/#">Qatar World Cup</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -82,7 +85,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="">Home </a>
+          <a class="nav-link" href="/#">Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/makepost/">Make a post</a>
@@ -120,8 +123,7 @@
                 <p class="card-text">{{post.description|truncatewords:20}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="{{post.id}}">  View </a></button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="outline: none;"> <a href="{{post.id}}">  View </a></button>
                   </div>
                   <small class="text-muted">{{post.category}} - {{post.date}}</small>
                 </div>

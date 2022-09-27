@@ -11,19 +11,19 @@ def index(request):
 
 
 def games(request):
-    posts = Post.objects.all().filter(category='3')
+    posts = Post.objects.all().filter(category='1')
     return render(request, 'copa/index.html',
                   {'posts': posts})
 
 
-def controversies(request):
+def news(request):
     posts = Post.objects.all().filter(category='1')
     return render(request, 'copa/index.html',
                   {'posts': posts})
 
 
 def players(request):
-    posts = Post.objects.all().filter(category='2')
+    posts = Post.objects.all().filter(category='3')
     return render(request, 'copa/index.html',
                   {'posts': posts})
 
@@ -51,8 +51,3 @@ def make_post(request):
         else:
             return render(request, "copa/make_post.html",
                           {'form': form})
-
-def search_value(request):
-
-    return render(request, 'copa/index.html',
-                  {'posts': posts})
