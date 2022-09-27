@@ -1,14 +1,17 @@
-# Blog-DjangoProject EN-US
+<h1> <img src="https://cdn-icons-png.flaticon.com/512/1105/1105470.png" width='40px' style="margin-top: 4px"> Blog Qatar World Cup - DjangoProject EN-US </h1>
 
 [README em PT-BR](https://github.com/Flyinng/ScrapyProject/blob/main/README-PT-BR.md)
 
-## Teamwork using the Scrapy framework
+##  Work using Django, a Python framework ⚙
 
-Scrapy is a free and open source web-crawling framework developed in ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+Django is a rapid web development framework written in Python that uses the model-template-view pattern.
+<br>
+See more about Django at: <a href="https://www.djangoproject.com/"> <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png" width='50px' style="margin-top: 4px"> </a>
 
 ### Program features:
 
-  + Gather data (price, web-crawling date, number of installments)
+  + Create posts with categories, titles, descriptions and images.
+  <img src="img/make_post.png">
 
   + Returns the smallest product value in a .txt file
 
