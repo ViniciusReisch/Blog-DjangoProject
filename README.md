@@ -6,15 +6,16 @@
 
 Django is a rapid web development framework written in Python that uses the model-template-view pattern.
 <br>
-See more about Django at: <a href="https://www.djangoproject.com/"> <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png" width='50px' style="margin-top: 4px"> </a>
+See more about Django at: <a href="https://www.djangoproject.com/"> <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png" width='50px'> </a>
 
 ### Program features:
 
   + Create posts with categories, titles, descriptions and images.
-  <img src="img/make_post.png">
+  <img src="img/make_post.png" width="40%">
 
-  + Returns the smallest product value in a .txt file
-
+  + You can see your posts on specific pages in a screen with the articles
+  <img src="img/view_post.png" width="40%"> 
+  
 ### How to download and run the project:
 
   + First, download the project from Github: ``git clone https://github.com/Flyinng/CRUD-Supermarket``.
