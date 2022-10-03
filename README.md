@@ -30,7 +30,6 @@ See more about Django at: <a href="https://www.djangoproject.com/"> <img src="ht
   + Then install the Django library in your IDE.
 
   + In your IDE's terminal, use the command ``cd BlogProject`` and then the command ``python manage.py runserver`` to access the WebSite.
-  + 
 <br>
 📜Project developed in the <a href="https://www.entra21.com.br/">Entra21</a> Python Class
 
